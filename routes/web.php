@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CasillaController;
+use App\Http\Controllers\CandidatoController;
+use App\Http\Controllers\VotoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,3 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('casilla', CasillaController::class);
+Route::resource('candidato', CandidatoController::class);
+Route::resource('voto', VotoController::class);
